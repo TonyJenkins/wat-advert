@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Technologies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #306998 0%, #FFD43B 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #306998;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #FFD43B;
+            background: #306998;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-item svg {
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-item:hover svg {
+            transform: scale(1.1);
+        }
+
+        .logo-item span {
+            font-weight: bold;
+            color: #306998;
+            font-size: 1.1em;
+        }
+
+        .features {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .features h2 {
+            color: #306998;
+            margin-bottom: 20px;
+        }
+
+        .features ul {
+            list-style: none;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .features li {
+            color: #555;
+            padding: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .features li:before {
+            content: "✓ ";
+            color: #FFD43B;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .cta {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #306998, #4B8BBE);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(48, 105, 152, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(48, 105, 152, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .logos {
+                gap: 20px;
+            }
+
+            .logo-item svg {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Application Technologies</h1>
+        <div class="subtitle">Master Modern Web Development</div>
+        
+        <p class="description">
+            Learn to build powerful, dynamic web applications from the ground up! 
+            This comprehensive module covers everything you need to create modern web applications, 
+            from front-end fundamentals to back-end development with industry-standard tools.
+        </p>
+
+        <div class="logos">
+            <div class="logo-item">
+                <svg width="100" height="100" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#E34F26" d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z"/>
+                    <path fill="#EF652A" d="M256 472.295l149.073-41.309 35.074-392.686H256z"/>
+                    <path fill="#EBEBEB" d="M256 208.962h-75.446l-5.213-58.410H256V94.197H114.281l1.367 15.303 14.036 157.305H256zM256 355.169l-.264.071-67.49-18.221-4.314-48.333h-57.56l8.487 95.098 124.128 34.438.013-.004z"/>
+                    <path fill="#FFF" d="M255.843 208.962v56.355h68.399l-6.456 72.309-61.943 16.717v58.8l113.866-31.553.835-9.373 13.051-146.225 1.354-15.03zM255.843 94.197v56.355h141.421l1.175-13.158 2.667-29.894 1.367-15.303z"/>
+                </svg>
+                <span>HTML5</span>
+            </div>
+            <div class="logo-item">
+                <svg width="100" height="100" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#264DE4" d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z"/>
+                    <path fill="#2965F1" d="M405.388 431.408l35.148-393.73H256v440.112z"/>
+                    <path fill="#EBEBEB" d="M124.46 208.59l5.065 56.517H256V208.59zM119.419 150.715H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"/>
+                    <path fill="#FFF" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"/>
+                </svg>
+                <span>CSS3</span>
+            </div>
+            <div class="logo-item">
+                <svg width="100" height="100" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="python-grad-1" x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%">
+                            <stop offset="0%" stop-color="#387EB8"/>
+                            <stop offset="100%" stop-color="#366994"/>
+                        </linearGradient>
+                        <linearGradient id="python-grad-2" x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%">
+                            <stop offset="0%" stop-color="#FFE052"/>
+                            <stop offset="100%" stop-color="#FFC331"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#python-grad-1)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z"/>
+                    <path fill="url(#python-grad-2)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z"/>
+                </svg>
+                <span>Python</span>
+            </div>
+            <div class="logo-item">
+                <svg width="100" height="100" viewBox="0 0 256 326" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#2BA977">
+                        <path d="M114.784 0h53.278l-53.278 53.278zM0 173.088h53.278l60.506-60.506h53.278z"/>
+                        <path d="M127.994 60.506L0 187.5v53.278l127.994-127.994z"/>
+                        <path d="M127.994 187.5L0 315.494V202.838l127.994-127.994z"/>
+                        <path d="M174.272 307.2h81.728L127.994 180.194l-53.278 53.278z"/>
+                        <path d="M202.838 325.944L127.994 251.1l-53.278 53.278h128.122z"/>
+                        <path d="M256 120.228v53.278l-53.278 53.278-60.506-60.506v-53.278z"/>
+                        <path d="M254.706 113.806L127.994 240.518V113.806l126.712-126.712z"/>
+                    </g>
+                </svg>
+                <span>Django</span>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Build semantic and accessible web pages with HTML5</li>
+                <li>Create beautiful, responsive designs with CSS3</li>
+                <li>Develop robust server-side applications with Python</li>
+                <li>Build full-featured web applications using Django framework</li>
+                <li>Understand the complete web development lifecycle</li>
+                <li>Deploy and maintain production-ready web applications</li>
+            </ul>
+        </div>
+
+        <button class="cta">Enroll Now</button>
+    </div>
+</body>
+</html>
